@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.left, .right {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+.left {
+  background: coral;
+}
+.right {
+  background: orange;
+}

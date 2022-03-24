@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#menu {
+  width: 250px;
+  height: 100vh;
+  background: #000;
+  position: fixed;
+  left: -230px;
+  top: 0px;
+  transition: all ease 1s;
+}
+li {
+  color: white;
+}
