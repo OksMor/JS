@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<style>
+  .slider-dot__toggle--current {
+    background-color: tomato;
+  }
+</style>
+
+  <div class="price__toggles slider-dot__toggles">
+    <button class="slider-dot__toggle" type="button">111</button>
+    <button class="slider-dot__toggle slider-dot__toggle--current" type="button">222</button>
+    <button class="slider-dot__toggle" type="button">333</button>
+  </div>
+
+  <script>
+  
+let priceToggles = document.querySelector('.price__toggles');
+let toggles = priceToggles.children;
+
+for (let i = 0; i < toggles.length; i++) {
+  toggles[i].addEventListener('click', function(evt) {
+    console.log(toggles[i]);
+    
+    if(!toggles[i].classList.contains('slider-dot__toggle--current')) {
+      console.log('no-activ');
+      toggles[i].classList.add('slider-dot__toggle--current');
+    }
+  })
+};
+
+
+
+  </script>
+</body>
+</html>
